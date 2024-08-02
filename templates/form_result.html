@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вывод</title>
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+<body class="fon_final">
+    <header class="header">
+        <div class="header__text">
+          <h1>Расчитай энергоэффективность своего дома!</h1>
+          <p>Реши проблему излишнего электропотребления самостоятельно!</p>
+        </div>
+    </header>
+    {% block content %}
+    <h1>Спасибо за ответ</h1>
+    <p>Имя: {{name}}</p>
+    <p>E-mail: {{email}}</p>
+    <p>Адресс: {{address}}</p>
+    <p>Дата приезда: {{date}}</p>
+    {% endblock %}
+</body>
+</html>
